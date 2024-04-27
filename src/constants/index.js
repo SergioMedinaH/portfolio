@@ -108,14 +108,14 @@ import {
       name: "Tailwind CSS",
       icon: tailwind,
     },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "Sanity",
-      icon: sanity,
-    },
+    //{
+    //  name: "Node JS",
+    //  icon: nodejs,
+    //},
+    //{
+    //  name: "Sanity",
+    //  icon: sanity,
+    //},
     {
       name: "Three JS",
       icon: threejs,
@@ -144,10 +144,10 @@ import {
       name: "Clerk",
       icon: clerk,
     },
-    {
-      name: "Shadcn",
-      icon: shadcn,
-    },
+    //{
+    //  name: "Shadcn",
+    //  icon: shadcn,
+    //},
   ];
   
   const experiences = [
