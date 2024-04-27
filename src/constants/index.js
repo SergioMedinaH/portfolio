@@ -29,11 +29,18 @@ import {
     shopify,
     carrent,
     imagenportfolio,
+    imagenBrainwave,
+    imagenEvently,
+    imagenImaginify,
+    imagenIphone,
     jobit,
     tripguide,
     threejs,
     logoport,
     emptyprof,
+    supabase,
+    clerk,
+    shadcn,
   } from "../assets";
 
   
@@ -124,6 +131,22 @@ import {
     {
       name: "Stripe",
       icon: stripe,
+    },
+    {
+      name: "MongoDB",
+      icon: mongodb,
+    },
+    {
+      name: "Supabase",
+      icon: supabase,
+    },
+    {
+      name: "Clerk",
+      icon: clerk,
+    },
+    {
+      name: "Shadcn",
+      icon: shadcn,
     },
   ];
   
@@ -251,7 +274,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: imagenEvently,
       source_code_link: "https://github.com/SergioMedinaH/event_platform",
       website_link: "https://event-platform-one-sigma.vercel.app/"
     },
@@ -273,7 +296,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: imagenImaginify,
       source_code_link: "https://github.com/SergioMedinaH/imaginify",
       website_link: "https://imaginify-six-ebon.vercel.app/"
     },
@@ -295,7 +318,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: imagenIphone,
       source_code_link: "https://github.com/SergioMedinaH/iphone",
       website_link: "https://iphone-tan.vercel.app/"
     },
@@ -317,7 +340,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: imagenportfolio,
+      image: imagenBrainwave,
       source_code_link: "https://github.com/SergioMedinaH/brainwave",
       website_link: "https://brainwave-nine-kappa.vercel.app/"
     },
@@ -341,7 +364,7 @@ import {
       ],
       image: imagenportfolio,
       source_code_link: "https://github.com/",
-      website_link: "https://notion-clone-production-778a.up.railway.app/"
+      website_link: "https://portfolio-theta-ruddy-22.vercel.app/"
     },
   ];
   

@@ -29,6 +29,9 @@ import nextjs from "./tech/nextjs.png";
 import sanity from "./tech/sanity.png";
 import stripe from "./tech/stripe.png";
 import vercel from "./tech/vercel.png";
+import supabase from "./tech/supabase.png";
+import clerk from "./tech/clerk.png";
+import shadcn from "./tech/shadcn.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -43,6 +46,11 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import imagenportfolio from "./imagenporfolio.png";
+import imagenImaginify from "./Imaginify_imagen.png";
+import imagenBrainwave from "./Brainwave_imagen.png";
+import imagenEvently from "./Evently_imagen.png";
+import imagenIphone from "./Iphone_imagen.png";
+
 
 import flag_en from "./flag_en.png"
 import flag_es from "./flag_es.png"
@@ -76,6 +84,8 @@ export {
   sanity,
   stripe,
   vercel,
+  clerk,
+  shadcn,
 
   meta,
   shopify,
@@ -89,7 +99,11 @@ export {
   carrent,
   jobit,
   tripguide,
-
+  imagenImaginify,
+  imagenBrainwave,
+  imagenEvently,
+  imagenIphone,
+  supabase,
   flag_en,
   flag_es,
 };
