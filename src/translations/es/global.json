@@ -1,0 +1,12 @@
+{
+    "header": {
+        "title": "Hola, soy ",
+        "subtitle1": "Desarrollo Páginas Web,",
+        "subtitle2": "aplicaciones móviles y productos digitales"
+    },
+    "about": {
+        "subtitle": "INTRODUCCIÓN",
+        "title": "Sobre mí",
+        "text": "¡Hola!, Soy un desarrollador web y de aplicaciones móviles autodidacta con más de 5 años de aprendizaje, especializado en crear experiencias digitales excepcionales y funcionales. Mi objetivo se basa en el uso de las últimas tecnologías para el desarrollo de aplicaciones web y móviles, incluyendo React.js, Node.js, Next.js Tailwind.css, Stripe, Sanity.io, junto a otras herramientas enfocadas en diseño como Figma, Inkscape, Blender, Canva, Midjourney, para ofrecer a mis clientes la máxima calidad, rendimiento y personalización, para garantizar su futuro éxito."
+    }
+}
