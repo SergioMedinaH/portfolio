@@ -48,33 +48,46 @@ import {
   export const navLinks = [
     {
       id: "about",
-      title: "Sobre mí",
+      title: "About",
+      title_es: "Sobre mí"
     },
+    //{
+    //  id: "work",
+    //  title: "Work",
+    //  title_es: "Experiencia",
+    //},
+    ,
     {
-      id: "work",
-      title: "Experiencia",
+      id: "projects",
+      title: "Projects",
+      title_es: "Proyectos",
     },
     {
       id: "contact",
-      title: "Contacto",
+      title: "Contact",
+      title_es: "Contacto",
     },
   ];
   
   const services = [
     {
-      title: "Desarrollo de Aplicaciones Web",
+      title: "Web Apps Development",
+      title_es: "Desarrollo de Aplicaciones Web",
       icon: web,
     },
     {
-      title: "Desarrollo de Aplicaciones Móviles",
+      title: "Mobile Apps Development",
+      title_es: "Desarrollo de Aplicaciones Móviles",
       icon: mobile,
     },
     {
-      title: "Diseño Web desde Cero",
+      title: "Web Design from Scratch",
+      title_es: "Diseño Web desde Cero",
       icon: backend,
     },
     {
-      title: "Creación de Elementos Gráficos 2D y 3D",
+      title: "2D & 3D Graphic Elements Creation",
+      title_es: "Creación de Elementos Gráficos 2D y 3D",
       icon: creator,
     },
   ];
@@ -140,10 +153,10 @@ import {
       name: "Supabase",
       icon: supabase,
     },
-    {
-      name: "Clerk",
-      icon: clerk,
-    },
+    //{
+    //  name: "Clerk",
+    //  icon: clerk,
+    //},
     //{
     //  name: "Shadcn",
     //  icon: shadcn,
@@ -235,9 +248,10 @@ import {
   const projects = [
     
     {
-      name: "Notion App Clone SaaS",
-      description:
-        "💵 Monthly Subscription System with Stripe \n ⏱️ Real-time Cursors and Collaboration \n 🔐 Custom Authentication with email 2FA \n 📝 Create, Update, Share and Delete Workspaces, Folders & Files \n 🌙 Light-Dark Mode \n 📱 Responsive design",
+      name: "Notion App SaaS",
+      name_es: "SaaS de Notion",
+      description: "💵 Monthly Subscription System with Stripe \n ⏱️ Real-time Cursors and Collaboration \n 🔐 Custom Authentication with email 2FA \n 📝 Create, Update, Share and Delete Workspaces, Folders & Files \n 🌙 Light-Dark Mode \n 📱 Responsive design",
+      description_es: "💵 Sistema de Subscripciones Mensuales con Stripe \n ⏱️ Cursores a Tiempo Real y Colaboración \n 🔐 Autentificación personalizada con 2FA con email \n 📝 Crea, Actualiza, Comparte y Elimina Espacios de Trabajo, Carpetas y Archivos \n 🌙 Modo Luminoso-Oscuro \n 📱 Diseño Adaptable",
       tags: [
         {
           name: "next.js",
@@ -258,8 +272,9 @@ import {
     },
     {
       name: "Events Platform",
-      description:
-        "🔐 Authentification with Clerk \n 💸 Checkout & Payments with Stripe \n 🔎 Search & Filter \n  🎫 Create, Read, Update & Delete Events \n 📊 Event Orders Management System",
+      name_es: "Plataforma de Eventos",
+      description: "🔐 Authentification with Clerk \n 💸 Checkout & Payments with Stripe \n 🔎 Search & Filter \n  🎫 Create, Read, Update & Delete Events \n 📊 Event Orders Management System",
+      description_es: "🔐 Autentificación con Clerk \n 💸 Pagos con Stripe \n 🔎 Busquedas y Filtrados \n  🎫 Crea, Lee, Actualiza y Elimina Eventos \n 📊 Sistema de gestión de órdenes de eventos ",
       tags: [
         {
           name: "next.js",
@@ -280,19 +295,20 @@ import {
     },
     {
       name: "AI Image Manipulator SaaS Platform",
-      description:
-        "🔐 Authentification with Clerk \n 💸 Credits System & Purchase with Stripe \n ✨ Image Restoration, Recoloring, Generative Fill, Object Removal & Background Removal with AI \n 🔎 Advance AI Image Search & Filter \n ⬇️ Download and Save Transformed Images",
+      name_es: "Plataforma SaaS de Manipulación de Imágenes con IA",
+      description: "🔐 Authentification with Clerk \n 💸 Credits System & Purchase with Stripe \n ✨ Image Restoration, Recoloring, Generative Fill, Object Removal & Background Removal with AI \n 🔎 Advance AI Image Search & Filter \n ⬇️ Download and Save Transformed Images",
+      description_es: "🔐 Autentificación con Clerk \n 💸 Sistema y Compra de Créditos con Stripe \n ✨ Restauración de imágenes, Recoloración, Relleno Generativo, Eliminación de Objetos y Eliminación de Fondos con IA \n 🔎 Búsqueda y Filtrado Avanzado con IA \n ⬇️ Descarga y Guarda las Imágenes Transformadas",
       tags: [
         {
           name: "next.js",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "AI",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "stripe",
           color: "pink-text-gradient",
         },
       ],
@@ -302,19 +318,20 @@ import {
     },
     {
       name: "IPhone Website",
-      description:
-      "🎥 3D Model Rendering with Different Colors and Sizes \n  ✨ Smooth Animations with GSAP \n 📱 Completely Responsive \n 🎠 Custom Video Carousel",
+      name_es: "IPhone Website",
+      description: "🎥 3D Model Rendering with Different Colors and Sizes \n  ✨ Smooth Animations with GSAP \n 📱 Completely Responsive \n 🎠 Custom Video Carousel",
+      description_es: "🎥 Renderizado de Modelos 3D con Diferentes Colores y Tamaños \n  ✨ Animaciones fluidas con GSAP \n 📱 Completamente Adaptable \n 🎠 Carrusel de vídeos personalizado",
       tags: [
         {
-          name: "nextjs",
+          name: "next.js",
           color: "blue-text-gradient",
         },
         {
-          name: "firebase",
+          name: "gsap",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
@@ -324,8 +341,9 @@ import {
     },
     {
       name: "Brainwave",
-      description:
-        "💡 Latest UI Trends \n 🎥 Parallax Animations \n 👀 Cool Gradients \n 📱 Completely Responsive ",
+      name_es: "Brainwave",
+      description: "💡 Latest UI Trends \n 🎥 Parallax Animations \n 👀 Cool Gradients \n 📱 Completely Responsive ",
+      description_es: "💡 Últimas tendencias en UI \n 🎥 Animaciones Parallax \n 👀 Degradados estéticos \n 📱 Completamente Adaptable ",
       tags: [
         {
           name: "react",
@@ -346,8 +364,9 @@ import {
     },
     {
       name: "Portfolio Personal",
-      description:
-        "📦 3D Models & Designs with Three.js \n ✨ Interactive Experience with Smooth Animations \n 📱 Completely Responsive \n 🎨 Custom Design",
+      name_es: "Portfolio Personal",
+      description: "📦 3D Models & Designs with Three.js \n ✨ Interactive Experience with Smooth Animations \n 📱 Completely Responsive \n 🎨 Custom Design",
+      description_es: "📦 Modelos y Diseños 3D con Three.js \n ✨ Experiencia Interactiva con Animaciones Fluidas \n 📱 Totalmente Adaptable \n 🎨 Diseño Personalizado",
       tags: [
         {
           name: "react",

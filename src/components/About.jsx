@@ -7,7 +7,8 @@ import {fadeIn, textVariant} from '../utils/motion'
 import { SectionWrapper } from '../hoc'
 import { useTranslation } from 'react-i18next'
 
-const ServiceCard = ({index, title, icon}) => {
+const ServiceCard = ({index, title, title_es, icon}) => {
+  const [t, i18n] = useTranslation("global");
   return (
     <Tilt className='xs:w-[250px] w-full'>
       <motion.div 
@@ -19,9 +20,9 @@ const ServiceCard = ({index, title, icon}) => {
           scale:1,
           speed:450,
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
+        className='bg-tertiary rounded-[20px] py-5 px-5 min-h-[280px] flex justify-evenly items-center flex-col'>
           <img src={icon} alt={title} className='w-16 h-16 object-contain '></img>
-          <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
+          <h3 className='text-white text-[20px] font-bold text-center'>{i18n.language === 'en' ? title : title_es}</h3>
         </div>
       </motion.div>
     </Tilt>

@@ -5,9 +5,11 @@ import { styles } from '../styles'
 import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
+import { useTranslation } from 'react-i18next'
 
 
 const Contact = () => {
+  const [t, i18n] = useTranslation("global");
   const formRef = useRef();
   const [form, setForm] = useState ({
     name:'',
@@ -41,7 +43,7 @@ const Contact = () => {
        )
        .then(() => {
         setLoading(false)
-        alert('Gracias. Me podré en contacto contigo cuanto antes.')
+        alert(i18n.language === 'en' ? "Thank you. I will get back to you as soon as possible." : 'Gracias. Me podré en contacto contigo cuanto antes.')
         setForm({
           name:'',
           email:'',
@@ -50,7 +52,7 @@ const Contact = () => {
        }, (error) => {
         setLoading(false)
         console.log(error);
-        alert('Uups, algo ha ido mal. Si no puedes contactar conmigo por aquí, escríbeme a sergiomher@gmail.com')
+        alert(i18n.language === 'en' ? 'Ahh, something went wrong. Please try again writing me at sergiomher@gmail.com ': 'Uups, algo ha ido mal. Si no puedes contactar conmigo por aquí, escríbeme a sergiomher@gmail.com')
        })
   }
 
@@ -59,49 +61,49 @@ const Contact = () => {
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
       <motion.div variants={slideIn('left', "tween", 0.2, 1)}
       className='flex-[0.75] bg-black-100 p-8 rounded-2xl'>
-        <p className={styles.sectionSubText}>Hablemos ya</p>
-        <h3 className={styles.sectionHeadText}>Contacto.</h3>
+        <p className={styles.sectionSubText}>{t("contact.subtitle")}</p>
+        <h3 className={styles.sectionHeadText}>{t("contact.title")}</h3>
         <form
         ref={formRef}
         onSubmit={handleSubmit}
         className='mt-12 flex flex-col gap-8'>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Tu nombre</span>
+            <span className='text-white font-medium mb-4'>{t("contact.name")}</span>
             <input 
             type="text" 
             name='name'
             value={form.name}
             onChange={handleChange}
-            placeholder="¿Cómo te llamas?"
+            placeholder={t("contact.name_placeholder")}
             className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Tu email</span>
+            <span className='text-white font-medium mb-4'>{t("contact.email")}</span>
             <input 
             type="email" 
             name='email'
             value={form.email}
             onChange={handleChange}
-            placeholder="¿Cuál es tu email?"
+            placeholder={t("contact.email_placeholder")}
             className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Tu mensaje</span>
+            <span className='text-white font-medium mb-4'>{t("contact.message")}</span>
             <textarea 
             rows="7"
             name='message'
             value={form.message}
             onChange={handleChange}
-            placeholder="¿De qué quieres que hablemos?"
+            placeholder={t("contact.message_placeholder")}
             className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <button
           type='submit'
           className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'>
-            {loading ? 'Enviando...' : 'Enviar'}
+            {loading ? t("contact.submitting") : t("contact.submit")}
           </button>
         </form>
       </motion.div>

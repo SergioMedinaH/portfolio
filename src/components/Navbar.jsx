@@ -42,7 +42,7 @@ const Navbar = () => {
               }  hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
               >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a href={`#${link.id}`}>{i18n.language === 'en' ? link.title : link.title_es}</a>
             </li>
           ))}
           {i18n.language === 'en' ?
@@ -78,7 +78,7 @@ const Navbar = () => {
                 setActive(link.title);
               }}
               >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a href={`#${link.id}`}>{i18n.language === 'en' ? link.title : link.title_es}</a>
             </li>
           ))}
           {i18n.language === 'en' ?

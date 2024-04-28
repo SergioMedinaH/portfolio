@@ -3,21 +3,24 @@ import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
-import { eye } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { useTranslation } from 'react-i18next';
 
 
 const ProjectCard = ({
   index,
   name,
+  name_es,
   description,
+  description_es,
   tags,
   image,
   source_code_link,
   website_link
 }) => {
+  const [t, i18n] = useTranslation("global");
   return (
     <motion.div
       variants={fadeIn("up", "spring", index*0.5, 0.75)}  
@@ -48,8 +51,8 @@ const ProjectCard = ({
           </div>
         </div>
         <div className="mt-5">
-          <h3 className=" text-white font-bold text-[24px] cursor-pointer" onClick={()=> window.open(website_link, "_blank")}>{name}</h3>
-          <p className="mt-2 text-secondary text-[14px] whitespace-pre-line">{description}</p>
+          <h3 className=" text-white font-bold text-[24px] cursor-pointer" onClick={()=> window.open(website_link, "_blank")}>{i18n.language === 'en' ? name : name_es}</h3>
+          <p className="mt-2 text-secondary text-[14px] whitespace-pre-line">{i18n.language === 'en' ? description : description_es}</p>
         </div>
         <div className="flex  justify-between items-center">
           <div className="mt-4 flex flex-wrap gap-2">
@@ -60,7 +63,7 @@ const ProjectCard = ({
             ))}
 
           </div>
-          <div className="mt-4 flex rounded-full px-4 border hover:scale-110 border-secondary hover:border-white text-secondary hover:text-white  cursor-pointer text-[14px] text-center bg-black-100 transition-all" onClick={()=> window.open(website_link, "_blank")}>View</div>
+          <div className="mt-4 flex rounded-full px-4 border hover:scale-110 border-secondary hover:border-white text-secondary hover:text-white  cursor-pointer text-[14px] text-center bg-black-100 transition-all" onClick={()=> window.open(website_link, "_blank")}>{i18n.language === 'en' ? "View" : "Ver"}</div>
           
         </div>
         
@@ -69,22 +72,19 @@ const ProjectCard = ({
   )
 }
 const Works = () => {
+  const [t, i18n] = useTranslation("global");
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>En qué he trabajado</p>
-        <h2 className={styles.sectionHeadText}>Proyectos.</h2>
+        <p className={styles.sectionSubText}>{t("works.subtitle")}</p>
+        <h2 className={styles.sectionHeadText}>{t("works.title")}</h2>
     </motion.div>
     <div className='w-full flex'>
       <motion.p
         variants={fadeIn("", "", 0.1,1)}
         className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+        {t("works.text")}
       </motion.p>
 
     </div>
@@ -99,4 +99,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");
