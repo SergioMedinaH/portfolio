@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { styles } from '../styles'
 import { navLinks } from '../constants'
 import {logo, logoport, menu, close, flag_en, flag_es} from '../assets'
 import { useTranslation } from 'react-i18next'
-import { useSearchParams } from 'react-router-dom'
+
+
 
 const Navbar = () => {
   const [active, setActive] = useState('')
@@ -12,22 +13,28 @@ const Navbar = () => {
 
   const [t, i18n] = useTranslation("global");
 
+  const handleChangeLanguage = (lang) => {
+    i18n.changeLanguage(lang)
+  }
+
+
   const [searchParams, setSearchParams] = useSearchParams();
 
   if(searchParams.has("lang")) {
     if(searchParams.get("lang") === "es") {
-      i18n.changeLanguage("es");
+      searchParams.delete("lang");
+      handleChangeLanguage("es");
     }
     if(searchParams.get("lang") === "en") {
-      i18n.changeLanguage("en");
+      searchParams.delete("lang");
+      handleChangeLanguage("en");
     }
     
-  }
+  }  
+  
 
 
-  const handleChangeLanguage = (lang) => {
-    i18n.changeLanguage(lang)
-  }
+  
 
   return (
     <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
