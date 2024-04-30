@@ -7,12 +7,12 @@
     "about": {
         "subtitle": "INTRODUCCIÓN",
         "title": "Sobre mí.",
-        "text": "¡Hola!, Soy un desarrollador web y de aplicaciones móviles autodidacta con más de 5 años de aprendizaje, especializado en crear experiencias digitales excepcionales y funcionales. Mi objetivo se basa en el uso de las últimas tecnologías para el desarrollo de aplicaciones web y móviles, incluyendo React.js, Node.js, Next.js Tailwind.css, Stripe, Sanity.io, junto a otras herramientas enfocadas en diseño como Figma, Inkscape, Blender, Canva, Midjourney, para ofrecer a mis clientes la máxima calidad, rendimiento y personalización, para garantizar su futuro éxito."
+        "text": "¡Hola!, soy un desarrollador web y de aplicaciones móviles autodidacta con más de 5 años de aprendizaje, especializado en crear experiencias digitales excepcionales. Mi objetivo se basa en el uso de las últimas tecnologías para el desarrollo de aplicaciones web y móviles, incluyendo React.js, Next.js Tailwind.css, Stripe, MongoDB, Supabase, junto a otras herramientas enfocadas en diseño como Figma, Inkscape, Blender, Canva, Midjourney, para ofrecer la máxima calidad, rendimiento y personalización."
     },
     "works": {
         "subtitle": "En qué he trabajado",
         "title": "Proyectos.",
-        "text": "ESP: Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively."
+        "text": "Estos son algunos de los proyectos que demuestran mi experiencia y habilidades a través de ejemplos. Cada proyecto está brevemente descrito, acompañado de links tanto al código fuente como a la página web en vivo, para que puedas verlos por ti mismo. Estos reflejan mi capacidad de resolver problemas complejos, trabajar con diferentes tecnologías y manejar proyectos eficazmente."
     },
     "contact": {
         "subtitle": "Hablemos ya",

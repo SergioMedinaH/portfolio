@@ -50,6 +50,7 @@ import imagenImaginify from "./Imaginify_imagen.png";
 import imagenBrainwave from "./Brainwave_imagen.png";
 import imagenEvently from "./Evently_imagen.png";
 import imagenIphone from "./Iphone_imagen.png";
+import imagenNotion from "./imagennotion.png"
 
 
 import flag_en from "./flag_en.png"
@@ -103,6 +104,7 @@ export {
   imagenBrainwave,
   imagenEvently,
   imagenIphone,
+  imagenNotion,
   supabase,
   flag_en,
   flag_es,

@@ -7,12 +7,12 @@
     "about": {
         "subtitle": "INTRODUCTION",
         "title": "About me.",
-        "text": "ENG: ¡Hola!, Soy un desarrollador web y de aplicaciones móviles autodidacta con más de 5 años de aprendizaje, especializado en crear experiencias digitales excepcionales y funcionales. Mi objetivo se basa en el uso de las últimas tecnologías para el desarrollo de aplicaciones web y móviles, incluyendo React.js, Node.js, Next.js Tailwind.css, Stripe, Sanity.io, junto a otras herramientas enfocadas en diseño como Figma, Inkscape, Blender, Canva, Midjourney, para ofrecer a mis clientes la máxima calidad, rendimiento y personalización, para garantizar su futuro éxito."
+        "text": "Hi!, I'm a self-taught web and mobile app developer with over 5 years of learning, specializing in creating exceptional digital experiences. My goal is based on using the latest technologies for web and mobile app development, including React.js, Next.js Tailwind.css, Stripe, MongoDB, Supabase, along with other design-focused tools such as Figma, Inkscape, Blender, Canva, Midjourney, to deliver the highest quality, performance and customization."
     },
     "works": {
         "subtitle": "What I have done so far",
         "title": "Projects.",
-        "text": "ENG: Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively."
+        "text": "Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively."
     },
     "contact": {
         "subtitle": "Get in touch",

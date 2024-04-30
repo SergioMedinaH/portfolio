@@ -4,12 +4,26 @@ import { styles } from '../styles'
 import { navLinks } from '../constants'
 import {logo, logoport, menu, close, flag_en, flag_es} from '../assets'
 import { useTranslation } from 'react-i18next'
+import { useSearchParams } from 'react-router-dom'
 
 const Navbar = () => {
   const [active, setActive] = useState('')
   const [toggle, setToggle] = useState(false)
 
   const [t, i18n] = useTranslation("global");
+
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  if(searchParams.has("lang")) {
+    if(searchParams.get("lang") === "es") {
+      i18n.changeLanguage("es");
+    }
+    if(searchParams.get("lang") === "en") {
+      i18n.changeLanguage("en");
+    }
+    
+  }
+
 
   const handleChangeLanguage = (lang) => {
     i18n.changeLanguage(lang)
