@@ -319,7 +319,7 @@ const projects = [
   },
   {
     name: "IPhone Website",
-    name_es: "IPhone Website",
+    name_es: "Página web IPhone",
     description: "🎥 3D Model Rendering with Different Colors and Sizes \n  ✨ Smooth Animations with GSAP \n 📱 Completely Responsive \n 🎠 Custom Video Carousel",
     description_es: "🎥 Renderizado de Modelos 3D con Diferentes Colores y Tamaños \n  ✨ Animaciones fluidas con GSAP \n 📱 Completamente Adaptable \n 🎠 Carrusel de vídeos personalizado",
     tags: [
